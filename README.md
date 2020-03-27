@@ -1,4 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sample react app
+
+This is a sample react app to demo docker capabilities. The project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+In order to run the dev version, either run:
+
+### `docker build -f Dockerfile.dev -t psantori/dockerizedReactApp .`
+
+and then run the dev server with:
+
+### `docker run -it -v /app/node_modules -v $(pwd):/app  psantori/dockerizedReactApp`
+
+and the tests with:
+
+### `docker run -it -v /app/node_modules -v $(pwd):/app  psantori/dockerizedReactApp npm run test`
+
+or use docker-compose:
+
+### `docker compose up --build`
+
+To build in production, use the multistep Dockerfile:
+
+### `docker build -t psantori/dockerizedReactApp .`
+
+and then:
+
+### `docker run -p 8080:80 psantori/dockerizedReactApp`
+
 
 ## Available Scripts
 
