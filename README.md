@@ -1,5 +1,8 @@
 # Sample react app
 
+[![Build Status](https://travis-ci.org/psantori/dockerized-react-app.svg?branch=master)](https://travis-ci.org/psantori/dockerized-react-app)
+
+
 This is a sample react app to demo docker capabilities. The project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In order to run the dev version, either run:
