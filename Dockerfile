@@ -9,6 +9,7 @@ RUN npm run build
 
 # Serve stage
 FROM nginx
+EXPOSE 80
 # Copy from build face
 COPY --from=build /app/build /usr/share/nginx/html
 # nginx start is already the default, no need to override it
