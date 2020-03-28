@@ -4,15 +4,15 @@ This is a sample react app to demo docker capabilities. The project was bootstra
 
 In order to run the dev version, either run:
 
-### `docker build -f Dockerfile.dev -t psantori/dockerizedReactApp .`
+### `docker build -f Dockerfile.dev -t psantori/dockerized-react-app .`
 
 and then run the dev server with:
 
-### `docker run -it -v /app/node_modules -v $(pwd):/app  psantori/dockerizedReactApp`
+### `docker run -it -v /app/node_modules -v $(pwd):/app  psantori/dockerized-react-app`
 
 and the tests with:
 
-### `docker run -it -v /app/node_modules -v $(pwd):/app  psantori/dockerizedReactApp npm run test`
+### `docker run -it -v /app/node_modules -v $(pwd):/app  psantori/dockerized-react-app npm run test`
 
 or use docker-compose:
 
@@ -20,11 +20,11 @@ or use docker-compose:
 
 To build in production, use the multistep Dockerfile:
 
-### `docker build -t psantori/dockerizedReactApp .`
+### `docker build -t psantori/dockerized-react-app .`
 
 and then:
 
-### `docker run -p 8080:80 psantori/dockerizedReactApp`
+### `docker run -p 8080:80 psantori/dockerized-react-app`
 
 
 ## Available Scripts
